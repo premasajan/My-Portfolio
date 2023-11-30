@@ -449,7 +449,7 @@ transform: translateY(0);
         .portfolio-container{
             grid-template-columns: repeat(2, 1fr);
         }
-}
+}   
 
 
 @media (max-width: 617px){

@@ -7,14 +7,19 @@
 
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        
+        <script src="js/script.js"></script>
 
         <link rel="stylesheet" href="style.css">
-
-
+         
     </head>
 
+    
     <body>
+
         <header class="header">
             <a href="#" class="logo">Portfolio</a>
             <i class='bx bx-menu' id="menu-icon"></i>
@@ -29,9 +34,10 @@
 </header>
  <section class="home" id="home">
     <div class="home-content">
-        <h3>Hello, It's Me</h3>
+        <h3>Hello, <font color=#76D7C4>It's Me</font></h3>
         <h1>Premasajan Rasamanikkam</h1>
-        <h3>And I'm a <span class="multi-text">UI/UX Designer</span></h3>
+        <h3>And I'm a <span class="multiple"></span></h3>
+
         <p>“UI is the saddle, the stirrups, & the reins. UX is the feeling you get being able to ride the horse.”</p>
         <div class="social-media">
             <a href="https://www.facebook.com/manikkam.sajan?mibextid=kFxxJD"><i class='bx bxl-facebook'></i> </a>
@@ -42,7 +48,7 @@
         <a href="https://drive.google.com/file/d/1zroMumCfnT3KMOmIqnqffm2lbIBE7p_Q/view?usp=drive_link" class="btn">Download CV</a>
     </div>
     <div class="home-img">
-        <img src="C:\Users\Premasajan\Desktop\My Portfolio\My-Portfolio\off.png" alt="" width="150" height="470">
+        <img src="off.png" alt="" width="150" height="470">
     </div>
  </section>
  <section class="about" id="about">
@@ -51,7 +57,7 @@
     </div>
 <div class="about-content">
     <h2 class="heading">About <span>Me</span></h2>
-    <h3> UI/UX Designer | Frontend Developer</h3>
+    <h3><font color=#76D7C4>UI/UX Designer | Frontend Developer</font> </h3>
     <p>I'm a UI/UX designer with a strong background in visual design, user-centered design, and interaction design. Proficient in prototyping and wireframing, I bring design concepts to life using tools like Figma and Adobe XD. I excel at finding creative solutions to design challenges and collaborating effectively with diverse teams.
 
         Additionally, I have front-end development skills, including HTML, CSS, JavaScript, React, and Node.js. I can bring my designs to life and build interactive and responsive websites and web applications.</p>
@@ -146,14 +152,29 @@
         
     </div>
  </footer>
+ <script>
+ const typed = new Typed('.multiple', {
+    strings: ['Frontend Developer','UI/UX Engineer','Graphics Designer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+</script>
+<script>
+    ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact-form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
- <script src="https://unpkg.com/scrollreveal"></script>
+</script>
 
- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <script src="js/script.js"></script>
-
-  
-        <script src="js/script.js"></script>
     </body>
 </html>
